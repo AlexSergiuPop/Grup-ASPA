@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: raleway extralight;
+  font-family: "Arial Narrow Bold", sans-serif;
 }
 html {
   height: 100%;
@@ -22,11 +22,12 @@ body {
   background-size: cover;
   position: absolute;
   background-blend-mode: multiply;
+  width: 100%;
 }
 nav {
   position: fixed;
   height: 100%;
-  width: 20rem;
+  width: 21rem;
   grid-area: nav;
   z-index: 99;
 }
@@ -63,25 +64,11 @@ li a:hover .fas {
   position: relative;
   grid-area: intro;
 }
-/* .phone {
+.quote {
   color: #ffffff;
-  font-size: 1rem;
-  position: relative;
-  left: 100rem;
-  top: -17rem;
+  grid-area: quote;
+  font-size: 1.2rem;
 }
-.phone a:hover .fas {
-  opacity: 1;
-  transition-delay: 300ms;
-  transition-timing-function: ease-in-out;
-}
-.phone a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.7rem;
-  transition: all 500ms;
-  font-weight: 600;
-} */
 .index {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -96,8 +83,8 @@ li a:hover .fas {
     "nav . . . . . . . . . . ."
     "nav . . . . . . . . . . ."
     "nav . . . . . . . . . . ."
-    "nav . . . . . . . . . . ."
-    "nav . . . . . . . . . . ."
+    "nav . . . . . . quote quote quote . ."
+    "nav . . . . . . quote quote quote . ."
     "nav . . . . . . . . . . .";
   height: 100vh;
   gap: 0.1rem;
