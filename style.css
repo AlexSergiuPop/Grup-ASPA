@@ -2,21 +2,21 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Arial Narrow Bold", sans-serif;
+  font-family: sans-serif;
 }
 html {
   height: 100%;
 }
 .logo {
-  width: 10rem;
-  height: 5rem;
+  width: 15rem;
+  height: 4rem;
   margin: 1rem 2rem 5rem 2rem;
   color: #add8e6;
   padding-left: 1rem;
 }
 body {
-  background-image: linear-gradient(#47c6bd, #47c6bd),
-    url(./images/background_remastered.jpg);
+  background-image: linear-gradient(#0d6d75, #0d6d75),
+    url(./images/background_bw.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,6 +69,14 @@ li a:hover .fas {
   grid-area: quote;
   font-size: 1.2rem;
 }
+footer {
+  color: #ffffff;
+  font-size: 0.5rem;
+  grid-area: foot;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .index {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -85,7 +93,7 @@ li a:hover .fas {
     "nav . . . . . . . . . . ."
     "nav . . . . . . quote quote quote . ."
     "nav . . . . . . quote quote quote . ."
-    "nav . . . . . . . . . . .";
+    "nav . foot foot foot foot foot foot foot foot . .";
   height: 100vh;
   gap: 0.1rem;
 }
